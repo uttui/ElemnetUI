@@ -1,30 +1,41 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div>
     <div>
-      <el-button @click="startHacking">Start</el-button>
+      <br />
+      <el-link href="https://element.eleme.io" target="_blank"
+        >默认链接</el-link
+      >
+      <el-link type="primary">主要链接</el-link>
+      <el-link type="success">成功链接</el-link>
+      <el-link type="warning">警告链接</el-link>
+      <el-link type="danger">危险链接</el-link>
+      <el-link type="info">信息链接</el-link>
     </div>
+    <div>
+      <br />
+      <el-link disabled>默认链接</el-link>
+      <el-link type="primary" disabled>主要链接</el-link>
+      <el-link type="success" disabled>成功链接</el-link>
+      <el-link type="warning" disabled>警告链接</el-link>
+      <el-link type="danger" disabled>危险链接</el-link>
+      <el-link type="info" disabled>信息链接</el-link>
+    </div>
+    <div>
+      <br />
+      <el-link :underline="false">无下划线</el-link>
+      <el-link>有下划线</el-link>
+    </div>
+    <div>
+      <br />
+      <el-link icon="el-icon-edit">编辑</el-link>
+      <el-link>查看<i class="el-icon-view el-icon--right"></i> </el-link>
+    </div>
+    
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It works!',
-        type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
-        duration: 5000
-      })
-    }
-  }
-}
+export default {};
 </script>
 
-<style>
-#app {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
-</style>
+<style></style>
