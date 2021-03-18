@@ -2,9 +2,9 @@
   <div class="su">
       <div>带输入建议</div>
       <br/>
-    <el-row class="demo-autocomplete">
+    <el-row>
       <el-col :span="12">
-        <div class="sub-title">激活即列出输入建议</div>
+        <div>激活即列出输入建议</div>
         <el-autocomplete
           class="inline-input"
           v-model="state1"
@@ -14,7 +14,7 @@
         ></el-autocomplete>
       </el-col>
       <el-col :span="12">
-        <div class="sub-title">输入后匹配输入建议</div>
+        <div>输入后匹配输入建议</div>
         <el-autocomplete
           class="inline-input"
           v-model="state2"

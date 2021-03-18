@@ -7,18 +7,18 @@
         <el-checkbox-button v-for="city in cities" :label="city" :key="city">{{ city }}</el-checkbox-button>
       </el-checkbox-group>
     </div>
-    <div style="margin-top: 20px">
+    <div class="bo">
       <el-checkbox-group v-model="checkboxGroup2" size="medium">
         <el-checkbox-button v-for="city in cities" :label="city" :key="city">{{ city }}</el-checkbox-button>
       </el-checkbox-group>
     </div>
-    <div style="margin-top: 20px">
+    <div class="bo">
       <el-checkbox-group v-model="checkboxGroup3" size="small">
         <el-checkbox-button v-for="city in cities" :label="city" :disabled="city === '北京'" :key="city" >{{ city }}</el-checkbox-button
         >
       </el-checkbox-group>
     </div>
-    <div style="margin-top: 20px">
+    <div class="bo">
       <el-checkbox-group v-model="checkboxGroup4" size="mini" disabled>
         <el-checkbox-button v-for="city in cities" :label="city" :key="city">{{ city }}</el-checkbox-button>
       </el-checkbox-group>
@@ -42,4 +42,7 @@ const cityOptions = ['上海', '北京', '广州', '深圳'];
 </script>
 
 <style>
+.bo{
+  margin-top: 20px
+}
 </style>
